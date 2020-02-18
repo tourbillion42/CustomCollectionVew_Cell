@@ -59,6 +59,11 @@ extension ViewController : UICollectionViewDelegateFlowLayout, UICollectionViewD
         
         return CGSize(width: collectionView.frame.width / 2, height: collectionView.frame.width / 2)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 30
+    }
+    
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return useData.count
